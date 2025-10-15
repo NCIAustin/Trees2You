@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Order Your Christmas Tree | Trees2You</title>
+    <meta name="description" content="Contact Trees2You to order your premium Nordmann Fir Christmas tree. Call, email, or visit our farm in Glynn, Wexford. Delivery available within 15km.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <a href="index.html" class="logo">
+                    <img src="src/imgs/Trees2you Logo.webp" alt="Trees2You" class="logo-image">
+                </a>
+
+                <!-- Desktop Navigation -->
+                <nav class="nav-desktop">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="products.html" class="nav-link">Our Trees</a>
+                    <a href="about.html" class="nav-link">About Us</a>
+                    <a href="blog.html" class="nav-link">Tree Care</a>
+                    <a href="contact.html" class="nav-link active">Contact</a>
+                </nav>
+
+                <!-- Phone Number -->
+                <div class="phone-number">
+                    <i data-lucide="phone"></i>
+                    <span>087 245 5790</span>
+                </div>
+
+                <!-- Mobile menu button -->
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div class="nav-mobile" id="mobileNav">
+                <a href="index.html" class="nav-link-mobile">Home</a>
+                <a href="products.html" class="nav-link-mobile">Our Trees</a>
+                <a href="about.html" class="nav-link-mobile">About Us</a>
+                <a href="blog.html" class="nav-link-mobile">Tree Care</a>
+                <a href="contact.html" class="nav-link-mobile active">Contact</a>
+                <div class="phone-mobile">
+                    <i data-lucide="phone"></i>
+                    <span>087 245 5790</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="page-hero-content">
+                <h1 class="page-hero-title">Get In Touch</h1>
+                <p class="page-hero-subtitle">
+                    Ready to order your perfect Christmas tree? Have questions about our farm or delivery? 
+                    We're here to help make your Christmas magical.
+                </p>
+                <div class="hero-features">
+                    <div class="hero-feature">
+                        <i data-lucide="phone"></i>
+                        <span>Quick Response</span>
+                    </div>
+                    <div class="hero-feature">
+                        <i data-lucide="calendar"></i>
+                        <span>Easy Booking</span>
+                    </div>
+                    <div class="hero-feature">
+                        <i data-lucide="tree-pine"></i>
+                        <span>Expert Advice</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Methods -->
+    <section class="contact-methods">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">How to Reach Us</h2>
+                <p class="section-subtitle">
+                    Choose the way that works best for you. We're committed to providing friendly, 
+                    helpful service and quick responses to all inquiries.
+                </p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i data-lucide="phone"></i>
+                    </div>
+                    <h3 class="contact-title">Call Us</h3>
+                    <p class="contact-details">087 245 5790</p>
+                    <p class="contact-subtitle">Available 9am-7pm daily during season</p>
+                    <a href="tel:0872455790" class="btn btn-primary">Contact Now</a>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i data-lucide="mail"></i>
+                    </div>
+                    <h3 class="contact-title">Email Us</h3>
+                    <p class="contact-details">hello@trees2you.ie</p>
+                    <p class="contact-subtitle">We reply within 24 hours</p>
+                    <a href="mailto:hello@trees2you.ie" class="btn btn-primary">Contact Now</a>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i data-lucide="map-pin"></i>
+                    </div>
+                    <h3 class="contact-title">Visit Our Farm</h3>
+                    <p class="contact-details">Glynn, Wexford</p>
+                    <p class="contact-subtitle">By appointment weekends & evenings</p>
+                    <a href="#" class="btn btn-primary">Contact Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="form-container">
+                <div class="section-header">
+                    <h2 class="section-title">Send Us a Message</h2>
+                    <p class="section-subtitle">
+                        Tell us about your Christmas tree needs and we'll get back to you with personalized recommendations and pricing.
+                    </p>
+                </div>
+
+                <div class="contact-form-card" id="contactForm">
+                    <form class="contact-form" action="https://formsubmit.co/austin@elevatestudios.ie" method="POST">
+                        
+                        <input type="hidden" name="redirect" value="#">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required placeholder="Enter your email">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" placeholder="Your phone number">
+                            </div>
+                            <div class="form-group">
+                                <label for="inquiryType">Inquiry Type *</label>
+                                <select id="inquiryType" name="inquiryType" required>
+                                    <option value="">Select inquiry type</option>
+                                    <option value="tree-order">Order a Christmas Tree</option>
+                                    <option value="delivery">Delivery Information</option>
+                                    <option value="farm-visit">Farm Visit Booking</option>
+                                    <option value="business">Business/Bulk Orders</option>
+                                    <option value="general">General Question</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="treeSize">Preferred Tree Size</label>
+                                <select id="treeSize" name="treeSize">
+                                    <option value="">Select tree size</option>
+                                    <option value="5ft">5ft Tree</option>
+                                    <option value="6ft">6ft Tree (Most Popular)</option>
+                                    <option value="7ft">7ft Tree</option>
+                                    <option value="8ft">8ft Tree</option>
+                                    <option value="9ft">9ft Tree</option>
+                                    <option value="multiple">Multiple Trees</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="deliveryNeeded">Delivery Needed?</label>
+                                <select id="deliveryNeeded" name="deliveryNeeded">
+                                    <option value="">Select option</option>
+                                    <option value="yes-delivery">Yes, I need delivery</option>
+                                    <option value="farm-pickup">I'll pick up at the farm</option>
+                                    <option value="undecided">Not sure yet</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="visitDate">Preferred Date (for farm visits or deliveries)</label>
+                            <input type="date" id="visitDate" name="visitDate">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" required rows="5" placeholder="Tell us about your Christmas tree needs, any questions you have, or special requests..."></textarea>
+                        </div>
+
+                        <div class="form-submit">
+                            <button type="submit" class="btn btn-primary" id="submitBtn">
+                                <i data-lucide="send"></i>
+                                <span>Send Message</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Success Message (hidden by default) -->
+                <div class="success-message" id="successMessage" style="display: none;">
+                    <div class="success-content">
+                        <i data-lucide="check-circle"></i>
+                        <h3>Message Sent Successfully!</h3>
+                        <p>Thank you for contacting Trees2You. We'll get back to you within 24 hours with 
+                        all the information you need for your perfect Christmas tree.</p>
+                        <button onclick="resetForm()" class="btn btn-primary">Send Another Message</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle">
+                    Quick answers to the most common questions about Trees2You Christmas trees.
+                </p>
+            </div>
+
+            <div class="faq-list">
+                <div class="faq-item">
+                    <h3 class="faq-question">What sizes of trees do you have available?</h3>
+                    <p class="faq-answer">We offer Nordmann Fir trees from 5ft to 9ft tall, with 6ft being our most popular family size.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">How far do you deliver?</h3>
+                    <p class="faq-answer">We deliver within 15km of our farm in Glynn, Wexford. Contact us to check if we deliver to your area.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">When should I order my tree?</h3>
+                    <p class="faq-answer">We recommend ordering by early December to ensure availability of your preferred size, especially for deliveries.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">Do you offer tree stands?</h3>
+                    <p class="faq-answer">Yes! We have premium metal tree stands available for purchase that provide excellent stability and water capacity.</p>
+                </div>
+            </div>
+
+            <div class="faq-cta">
+                <p>Still have questions?</p>
+                <a href="blog.html" class="btn btn-primary">Browse Our Blog</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location & Hours -->
+    <section class="location-section">
+        <div class="container">
+            <div class="location-content">
+                <div class="location-info">
+                    <h2 class="section-title">Visit Our Farm</h2>
+                    <div class="location-details">
+                        <div class="detail-item">
+                            <i data-lucide="map-pin"></i>
+                            <div>
+                                <h3>Location</h3>
+                                <p>Glynn, Wexford, Ireland<br>
+                                (Exact address provided with farm visit booking)</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i data-lucide="clock"></i>
+                            <div>
+                                <h3>Farm Visit Hours</h3>
+                                <p>Weekends & Evenings by Appointment<br>
+                                December: Extended hours available<br>
+                                Call ahead to schedule your visit</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i data-lucide="truck"></i>
+                            <div>
+                                <h3>Delivery Service</h3>
+                                <p>Available within 15km of our farm<br>
+                                Scheduled delivery times<br>
+                                Fresh trees delivered to your door</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="location-expectations">
+                    <h2 class="section-title">What to Expect</h2>
+                    <ul class="expectations-list">
+                        <li><i data-lucide="check-circle"></i> Free parking at our farm location</li>
+                        <li><i data-lucide="check-circle"></i> Walk among beautiful rows of trees</li>
+                        <li><i data-lucide="check-circle"></i> Fresh cutting service included</li>
+                        <li><i data-lucide="check-circle"></i> Tree netting and loading assistance</li>
+                        <li><i data-lucide="check-circle"></i> Stands and accessories available</li>
+                        <li><i data-lucide="check-circle"></i> Friendly, knowledgeable service</li>
+                    </ul>
+                    
+                    <div class="visit-info-box">
+                        <h3>Planning Your Visit?</h3>
+                        <p>Contact us in advance to ensure availability and get directions to our farm. 
+                        We'll make sure everything is ready for your perfect tree selection experience.</p>
+                        <div class="visit-buttons">
+                            <a href="tel:0872455790" class="btn btn-primary">Call Now</a>
+                            <a href="mailto:hello@trees2you.ie" class="btn btn-secondary">Email Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Company Info -->
+                <div class="footer-section footer-main">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <i data-lucide="tree-pine"></i>
+                            <div class="logo-dot"></div>
+                        </div>
+                        <div class="logo-text">
+                            <span class="logo-title">Trees2You</span>
+                            <p class="logo-subtitle">Premium Christmas Trees Since 2019</p>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        Family-owned Christmas tree farm in Glynn, Wexford. We specialize in premium 
+                        Nordmann Fir trees with exceptional quality and convenient delivery service.
+                    </p>
+                    
+                    <!-- Contact Info -->
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i data-lucide="map-pin"></i>
+                            <span>Glynn, Wexford, Ireland</span>
+                        </div>
+                        <div class="contact-item">
+                            <i data-lucide="phone"></i>
+                            <span>087 245 5790</span>
+                        </div>
+                        <div class="contact-item">
+                            <i data-lucide="mail"></i>
+                            <span>hello@trees2you.ie</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-section">
+                    <h3 class="footer-title">Navigation</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Our Trees</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="blog.html">Tree Care</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services & Social -->
+                <div class="footer-section">
+                    <h3 class="footer-title">Services</h3>
+                    <ul class="footer-links">
+                        <li>Farm Visits</li>
+                        <li>Local Delivery</li>
+                        <li>Tree Stands</li>
+                        <li>Fresh Cutting</li>
+                    </ul>
+
+                    <h3 class="footer-title">Follow Us</h3>
+                    <div class="social-links">
+                       
+                        <a href="https://www.instagram.com/trees2you.ie/"><i data-lucide="instagram"></i></a>
+                       
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Trees2You. All rights reserved. | Bringing Christmas magic to Irish families since 2019.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

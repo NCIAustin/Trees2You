@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trees2You - Premium Christmas Trees Delivered | Glynn, Wexford</title>
+    <meta name="description" content="Premium Nordmann Fir Christmas trees from our family farm in Glynn, Wexford. Choose from 5ft-9ft trees with delivery available. Soft needles, minimal shedding, perfect for families.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="/src/imgs/Trees2you Logo.webp">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <a href="index.html" class="logo">
+                    <img src="src/imgs/Trees2you Logo.webp" alt="Trees2You" class="logo-image">
+                </a>
+
+                <!-- Desktop Navigation -->
+                <nav class="nav-desktop">
+                    <a href="index.html" class="nav-link active">Home</a>
+                    <a href="products.html" class="nav-link">Our Trees</a>
+                    <a href="about.html" class="nav-link">About Us</a>
+                    <a href="blog.html" class="nav-link">Tree Care</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </nav>
+
+                <!-- Phone Number -->
+                <div class="phone-number">
+                    <i data-lucide="phone"></i>
+                    <span>087 245 5790</span>
+                </div>
+
+                <!-- Mobile menu button -->
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div class="nav-mobile" id="mobileNav">
+                <a href="index.html" class="nav-link-mobile active">Home</a>
+                <a href="products.html" class="nav-link-mobile">Our Trees</a>
+                <a href="about.html" class="nav-link-mobile">About Us</a>
+                <a href="blog.html" class="nav-link-mobile">Tree Care</a>
+                <a href="contact.html" class="nav-link-mobile">Contact</a>
+                <div class="phone-mobile">
+                    <i data-lucide="phone"></i>
+                    <span>087 245 5790</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Premium Christmas Trees
+                    <span class="hero-title-accent">Delivered Fresh</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Nordmann Fir Christmas trees from our family farm in Glynn, Wexford. 
+                    Soft needles, minimal shedding, and professional delivery service.
+                </p>
+                <div class="hero-buttons">
+                    <a href="products.html" class="btn btn-primary">
+                        <i data-lucide="tree-pine"></i>
+                        <span>Browse Our Trees</span>
+                    </a>
+                    <a href="contact.html" class="btn btn-secondary">
+                        Get Delivery Quote
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Trees2You -->
+    <section class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Why Choose Trees2You</h2>
+                <p class="section-subtitle">
+                    Five years of experience serving Wexford families with premium trees, 
+                    exceptional service, and the convenience modern families need.
+                </p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="heart"></i>
+                    </div>
+                    <h3 class="feature-title">Family Safe</h3>
+                    <p class="feature-description">
+                        Soft needles that won't hurt children or pets, making decorating safe and enjoyable for the whole family.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="leaf"></i>
+                    </div>
+                    <h3 class="feature-title">Minimal Shedding</h3>
+                    <p class="feature-description">
+                        Superior needle retention keeps your home clean throughout the holiday season with minimal maintenance.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="truck"></i>
+                    </div>
+                    <h3 class="feature-title">Convenient Delivery</h3>
+                    <p class="feature-description">
+                        Professional delivery service direct from our farm. Perfect for busy families and those without transport.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="shield"></i>
+                    </div>
+                    <h3 class="feature-title">Quality Guarantee</h3>
+                    <p class="feature-description">
+                        Every tree is hand-selected, fresh-cut, and guaranteed to maintain its beauty throughout the season.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="award"></i>
+                    </div>
+                    <h3 class="feature-title">Premium Nordmann Fir</h3>
+                    <p class="feature-description">
+                        We exclusively grow Nordmann Fir trees, recognized as the premium choice for Christmas trees.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="users"></i>
+                    </div>
+                    <h3 class="feature-title">Trusted Locally</h3>
+                    <p class="feature-description">
+                        Five years serving Wexford families with over 1,000 satisfied customers and growing.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat">
+                    <div class="stat-number">5</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">1000+</div>
+                    <div class="stat-label">Happy Families</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">5-9ft</div>
+                    <div class="stat-label">Tree Sizes</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Wexford Grown</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="process">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Simple Process, Perfect Results</h2>
+                <p class="section-subtitle">
+                    Three easy steps to your perfect Christmas tree
+                </p>
+            </div>
+
+            <div class="process-grid">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <h3 class="step-title">Choose Your Tree</h3>
+                    <p class="step-description">
+                        Browse our selection of premium Nordmann Fir trees from 5ft to 9ft. 
+                        Each size is perfect for different spaces and needs.
+                    </p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number step-number-dark">2</div>
+                    <h3 class="step-title">Visit or Deliver</h3>
+                    <p class="step-description">
+                        Visit our farm in Glynn for the full experience, or choose our convenient 
+                        delivery service.
+                    </p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <h3 class="step-title">Enjoy Christmas</h3>
+                    <p class="step-description">
+                        Set up your beautiful tree with minimal mess and enjoy weeks 
+                        of Christmas magic with superior needle retention.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready for Your Perfect Tree?</h2>
+                <p class="cta-subtitle">
+                    Join hundreds of satisfied Wexford families who trust Trees2You for their Christmas tradition. 
+                    Premium trees, professional service, lasting memories.
+                </p>
+                <div class="cta-buttons">
+                    <a href="products.html" class="btn btn-primary">
+                        <i data-lucide="tree-pine"></i>
+                        <span>Browse Trees</span>
+                    </a>
+                    <a href="about.html" class="btn btn-secondary">
+                        Visit Our Farm
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Company Info -->
+                <div class="footer-section footer-main">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <i data-lucide="tree-pine"></i>
+                            <div class="logo-dot"></div>
+                        </div>
+                        <div class="logo-text">
+                            <span class="logo-title">Trees2You</span>
+                            <p class="logo-subtitle">Premium Christmas Trees Since 2019</p>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        Family-owned Christmas tree farm in Glynn, Wexford. We specialize in premium 
+                        Nordmann Fir trees with exceptional quality and convenient delivery service.
+                    </p>
+                    
+                    <!-- Contact Info -->
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i data-lucide="map-pin"></i>
+                            <span>Glynn, Wexford, Ireland</span>
+                        </div>
+                        <div class="contact-item">
+                            <i data-lucide="phone"></i>
+                            <span>087 245 5790</span>
+                        </div>
+                        <div class="contact-item">
+                            <i data-lucide="mail"></i>
+                            <span>hello@trees2you.ie</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-section">
+                    <h3 class="footer-title">Navigation</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Our Trees</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="blog.html">Tree Care</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services & Social -->
+                <div class="footer-section">
+                    <h3 class="footer-title">Services</h3>
+                    <ul class="footer-links">
+                        <li>Farm Visits</li>
+                        <li>Local Delivery</li>
+                        <li>Tree Stands</li>
+                        <li>Fresh Cutting</li>
+                    </ul>
+
+                    <h3 class="footer-title">Follow Us</h3>
+                    <div class="social-links">
+                        
+                        <a href="https://www.instagram.com/trees2you.ie/"><i data-lucide="instagram"></i></a>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Trees2You. All rights reserved. | Bringing Christmas magic to Irish families since 2019.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

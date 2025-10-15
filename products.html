@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Trees - Premium Nordmann Fir | Trees2You</title>
+    <meta name="description" content="Browse our selection of premium Nordmann Fir Christmas trees from 5ft to 9ft. Hand-selected, fresh-cut, and delivered to your door in Wexford.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <style>
+        /* Ensure all 4 cards are on one row on desktop */
+        .trees-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+        }
+        @media (max-width: 1024px) {
+            .trees-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 600px) {
+            .trees-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        /* Center the Most Popular ribbon */
+        .popular-badge {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+        /* Make all tree cards the same height and evenly space content */
+        .tree-card {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+            min-height: 520px; /* Adjust as needed for your content */
+            box-sizing: border-box;
+        }
+        .tree-card > *:not(:last-child) {
+            margin-bottom: 1rem;
+        }
+        /* Align price and button at the bottom together */
+        .tree-price,
+        .tree-card > a.btn,
+        .tree-card > a.btn-primary,
+        .tree-card > a.btn-outline {
+            margin-bottom: 0;
+        }
+        .tree-card .tree-price {
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        .tree-card .tree-price .price {
+            font-size: 2rem;
+            font-weight: bold;
+            display: block;
+        }
+        .tree-card .tree-price .price-note {
+            font-size: 0.95rem;
+            color: #666;
+        }
+        .tree-card > a.btn,
+        .tree-card > a.btn-primary,
+        .tree-card > a.btn-outline {
+            margin-top: auto;
+        }
+        /* Remove custom centering and styling for cta-buttons and btn-secondary */
+        
+       
+        .final-cta {
+            background: linear-gradient(135deg, #059669 0%, #047857 100%);
+            color: #fff;
+        }
+        .final-cta .cta-title,
+        .final-cta .cta-subtitle {
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <a href="index.html" class="logo">
+                    <img src="src/imgs/Trees2you Logo.webp" alt="Trees2You" class="logo-image">
+                </a>
+
+                <!-- Desktop Navigation -->
+                <nav class="nav-desktop">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="products.html" class="nav-link active">Our Trees</a>
+                    <a href="about.html" class="nav-link">About Us</a>
+                    <a href="blog.html" class="nav-link">Tree Care</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </nav>
+
+                <!-- Phone Number -->
+                <div class="phone-number">
+                    <i data-lucide="phone"></i>
+                    <span>087 245 5790</span>
+                </div>
+
+                <!-- Mobile menu button -->
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div class="nav-mobile" id="mobileNav">
+                <a href="index.html" class="nav-link-mobile">Home</a>
+                <a href="products.html" class="nav-link-mobile active">Our Trees</a>
+                <a href="about.html" class="nav-link-mobile">About Us</a>
+                <a href="blog.html" class="nav-link-mobile">Tree Care</a>
+                <a href="contact.html" class="nav-link-mobile">Contact</a>
+                <div class="phone-mobile">
+                    <i data-lucide="phone"></i>
+                    <span>087 245 5790</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="page-hero-content">
+                <h1 class="page-hero-title">Premium Nordmann Fir Trees</h1>
+                <p class="page-hero-subtitle">
+                    Hand-selected Christmas trees in sizes perfect for every home. 
+                    All trees are fresh-cut and guaranteed for quality.
+                </p>
+                <div class="hero-features">
+                    <div class="hero-feature">
+                        <i data-lucide="heart"></i>
+                        <span>Family Safe</span>
+                    </div>
+                    <div class="hero-feature">
+                        <i data-lucide="leaf"></i>
+                        <span>Minimal Shedding</span>
+                    </div>
+                    <div class="hero-feature">
+                        <i data-lucide="shield"></i>
+                        <span>Quality Guaranteed</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tree Sizes -->
+    <section class="tree-sizes">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Choose Your Perfect Size</h2>
+                <p class="section-subtitle">
+                    All our Nordmann Fir trees are grown with care on our family farm. 
+                    Every tree is hand-selected for quality, fullness, and beauty.
+                </p>
+            </div>
+
+            <div class="trees-grid">
+                <div class="tree-card">
+                    <div class="tree-icon">
+                        <i data-lucide="tree-pine"></i>
+                    </div>
+                    <h3 class="tree-size">5ft Tree</h3>
+                    <p class="tree-height">5 feet (1.5m)</p>
+                    <p class="tree-ideal">Perfect for apartments and smaller spaces</p>
+                    
+                    <div class="tree-price">
+                        <span class="price">€40</span>
+                        <p class="price-note">Fresh cut included</p>
+                    </div>
+
+                    <ul class="tree-features">
+                        <li><i data-lucide="check-circle"></i> Ideal for compact living spaces</li>
+                        <li><i data-lucide="check-circle"></i> Easy to transport and setup</li>
+                        <li><i data-lucide="check-circle"></i> Great for tabletop displays</li>
+                    </ul>
+
+                    <a href="contact.html" class="btn btn-outline">Order This Size</a>
+                </div>
+
+                <div class="tree-card popular">
+                    <div class="popular-badge">Most Popular</div>
+                    <div class="tree-icon">
+                        <i data-lucide="tree-pine"></i>
+                    </div>
+                    <h3 class="tree-size">6ft Tree</h3>
+                    <p class="tree-height">6 feet (1.8m)</p>
+                    <p class="tree-ideal">Most popular choice for family homes</p>
+                    
+                    <div class="tree-price">
+                        <span class="price">€40</span>
+                        <p class="price-note">Fresh cut included</p>
+                    </div>
+
+                    <ul class="tree-features">
+                        <li><i data-lucide="check-circle"></i> Classic family size</li>
+                        <li><i data-lucide="check-circle"></i> Perfect for standard ceilings</li>
+                        <li><i data-lucide="check-circle"></i> Excellent needle retention</li>
+                    </ul>
+
+                    <a href="contact.html" class="btn btn-primary">Order This Size</a>
+                </div>
+
+                <div class="tree-card">
+                    <div class="tree-icon">
+                        <i data-lucide="tree-pine"></i>
+                    </div>
+                    <h3 class="tree-size">7ft Tree</h3>
+                    <p class="tree-height">7 feet (2.1m)</p>
+                    <p class="tree-ideal">Impressive centerpiece for living rooms</p>
+                    
+                    <div class="tree-price">
+                        <span class="price">€40</span>
+                        <p class="price-note">Fresh cut included</p>
+                    </div>
+
+                    <ul class="tree-features">
+                        <li><i data-lucide="check-circle"></i> Statement presence</li>
+                        <li><i data-lucide="check-circle"></i> Ample decoration space</li>
+                        <li><i data-lucide="check-circle"></i> Fuller, bushier appearance</li>
+                    </ul>
+
+                    <a href="contact.html" class="btn btn-outline">Order This Size</a>
+                </div>
+
+                <div class="tree-card">
+                    <div class="tree-icon">
+                        <i data-lucide="tree-pine"></i>
+                    </div>
+                    <h3 class="tree-size">8ft Tree</h3>
+                    <p class="tree-height">8 feet (2.4m)</p>
+                    <p class="tree-ideal">Grand trees for larger homes or high ceilings</p>
+                    
+                    <div class="tree-price">
+                        <span class="price">€40</span>
+                        <p class="price-note">Fresh cut included</p>
+                    </div>
+
+                    <ul class="tree-features">
+                        <li><i data-lucide="check-circle"></i> Dramatic height</li>
+                        <li><i data-lucide="check-circle"></i> Premium fullness</li>
+                        <li><i data-lucide="check-circle"></i> Perfect for high ceilings</li>
+                    </ul>
+
+                    <a href="contact.html" class="btn btn-outline">Order This Size</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Nordmann Fir -->
+    <section class="nordmann-section">
+        <div class="container">
+            <div class="nordmann-content">
+                <div class="nordmann-visual">
+                    <div class="tree-visual">
+                        <!--<i data-lucide="tree-pine"></i>-->
+                        <img src="src/imgs/Nordmann Fir Christmmas Tree.webp" alt="Nordmann Fir Tree" class="nordmann-image">
+                        <p>Premium Nordmann Fir trees with their characteristic soft needles 
+                        and exceptional shape retention</p>
+                    </div>
+                </div>
+                <div class="nordmann-info">
+                    <h2 class="section-title">Why Nordmann Fir Trees</h2>
+                    <p class="section-description">
+                        Nordmann Fir is the premium choice for families who want beauty, safety, and convenience. 
+                        These exceptional trees offer everything you need for the perfect Christmas.
+                    </p>
+                    
+                    <ul class="benefits-list">
+                        <li><i data-lucide="check-circle"></i> Soft, non-drop needles safe for children and pets</li>
+                        <li><i data-lucide="check-circle"></i> Excellent needle retention throughout the season</li>
+                        <li><i data-lucide="check-circle"></i> Beautiful, symmetrical shape with strong branches</li>
+                        <li><i data-lucide="check-circle"></i> Fresh pine scent without being overpowering</li>
+                        <li><i data-lucide="check-circle"></i> Sustainable growing practices</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Extras & Services -->
+    <section class="extras">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Complete Your Experience</h2>
+                <p class="section-subtitle">
+                    Professional services and accessories to make your tree experience perfect. 
+                    Everything you need for hassle-free Christmas setup.
+                </p>
+            </div>
+
+            <div class="extras-grid">
+                <div class="extra-card">
+                    <div class="extra-icon">
+                        <i data-lucide="shield"></i>
+                    </div>
+                    <div class="extra-content">
+                        <h3 class="extra-title">Premium Tree Stand</h3>
+                        <p class="extra-description">
+                            High-strength plastic stand with ample water capacity and stable tree support
+                        </p>
+                    </div>
+                </div>
+
+                <div class="extra-card">
+                    <div class="extra-icon">
+                        <i data-lucide="star"></i>
+                    </div>
+                    <div class="extra-content">
+                        <h3 class="extra-title">Fresh Cutting Service</h3>
+                        <p class="extra-description">
+                            Professional fresh cut made just before delivery for maximum water absorption
+                        </p>
+                    </div>
+                </div>
+
+                <div class="extra-card">
+                    <div class="extra-icon">
+                        <i data-lucide="truck"></i>
+                    </div>
+                    <div class="extra-content">
+                        <h3 class="extra-title">Local Delivery</h3>
+                        <p class="extra-description">
+                            Reliable delivery service from our farm to your living room
+                        </p>
+                    </div>
+                </div>
+
+                <div class="extra-card">
+                    <div class="extra-icon">
+                        <i data-lucide="leaf"></i>
+                    </div>
+                    <div class="extra-content">
+                        <h3 class="extra-title">Tree Netting</h3>
+                        <p class="extra-description">
+                            Professional netting service for easy transport and mess-free setup
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Business Services -->
+    <section class="business-services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Commercial Services</h2>
+                <p class="section-subtitle">
+                    Professional Christmas tree solutions for hotels, restaurants, offices, and retail spaces. 
+                    Commercial-grade trees with professional delivery and setup services.
+                </p>
+            </div>
+
+            <div class="business-grid">
+                <div class="business-feature">
+                    <i data-lucide="tree-pine"></i>
+                    <h3>Large Tree Sizes</h3>
+                    <p>Up to 9ft trees perfect for commercial spaces and impressive displays</p>
+                </div>
+                <div class="business-feature">
+                    <i data-lucide="truck"></i>
+                    <h3>Professional Service</h3>
+                    <p>Scheduled delivery and optional setup service for busy businesses</p>
+                </div>
+                <div class="business-feature">
+                    <i data-lucide="star"></i>
+                    <h3>Volume Pricing</h3>
+                    <p>Special pricing available for multiple trees and repeat customers</p>
+                </div>
+            </div>
+
+            <div class="business-cta">
+                <a href="contact.html" class="btn btn-primary">
+                    Get Business Quote
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to Order Your Tree?</h2>
+                <p class="cta-subtitle">
+                    Contact us today to place your order or ask any questions. We're here to help 
+                    make your Christmas tree experience absolutely perfect.
+                </p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary">Place Your Order</a>
+                    <a href="about.html" class="btn btn-secondary">Visit Our Farm</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Company Info -->
+                <div class="footer-section footer-main">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <i data-lucide="tree-pine"></i>
+                            <div class="logo-dot"></div>
+                        </div>
+                        <div class="logo-text">
+                            <span class="logo-title">Trees2You</span>
+                            <p class="logo-subtitle">Premium Christmas Trees Since 2019</p>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        Family-owned Christmas tree farm in Glynn, Wexford. We specialize in premium 
+                        Nordmann Fir trees with exceptional quality and convenient delivery service.
+                    </p>
+                    
+                    <!-- Contact Info -->
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i data-lucide="map-pin"></i>
+                            <span>Glynn, Wexford, Ireland</span>
+                        </div>
+                        <div class="contact-item">
+                            <i data-lucide="phone"></i>
+                            <span>087 245 5790</span>
+                        </div>
+                        <div class="contact-item">
+                            <i data-lucide="mail"></i>
+                            <span>hello@trees2you.ie</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-section">
+                    <h3 class="footer-title">Navigation</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Our Trees</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="blog.html">Tree Care</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services & Social -->
+                <div class="footer-section">
+                    <h3 class="footer-title">Services</h3>
+                    <ul class="footer-links">
+                        <li>Farm Visits</li>
+                        <li>Local Delivery</li>
+                        <li>Tree Stands</li>
+                        <li>Fresh Cutting</li>
+                    </ul>
+
+                    <h3 class="footer-title">Follow Us</h3>
+                    <div class="social-links">
+                        
+                        <a href="https://www.instagram.com/trees2you.ie/"><i data-lucide="instagram"></i></a>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Trees2You. All rights reserved. | Bringing Christmas magic to Irish families since 2019.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

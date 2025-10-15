@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christmas Tree Care & Tips | Trees2You Blog</title>
+    <meta name="description" content="Expert Christmas tree care tips from Trees2You. Learn how to keep your Nordmann Fir tree fresh, safe, and beautiful throughout the holiday season.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <style> 
+        .tip-icon {
+            align-self: center;
+        }
+        
+  /* --- Tip Grid Layout --- */
+  .tips-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+    gap: 20px; /* spacing between cards */
+    margin-top: 30px;
+  }
+
+  .tip-card {
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <a href="index.html" class="logo">
+                    <img src="src/imgs/Trees2you Logo.webp" alt="Trees2You" class="logo-image">
+                </a>
+
+                <!-- Desktop Navigation -->
+                <nav class="nav-desktop">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="products.html" class="nav-link">Our Trees</a>
+                    <a href="about.html" class="nav-link">About Us</a>
+                    <a href="blog.html" class="nav-link active">Tree Care</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </nav>
+
+                <!-- Phone Number -->
+                <div class="phone-number">
+                    <i data-lucide="phone"></i>
+                    <span>087 245 5790</span>
+                </div>
+
+                <!-- Mobile menu button -->
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div class="nav-mobile" id="mobileNav">
+                <a href="index.html" class="nav-link-mobile">Home</a>
+                <a href="products.html" class="nav-link-mobile">Our Trees</a>
+                <a href="about.html" class="nav-link-mobile">About Us</a>
+                <a href="blog.html" class="nav-link-mobile active">Tree Care</a>
+                <a href="contact.html" class="nav-link-mobile">Contact</a>
+                <div class="phone-mobile">
+                    <i data-lucide="phone"></i>
+                    <span>087 245 5790</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="page-hero-content">
+                <h1 class="page-hero-title">Christmas Tree Care & Tips</h1>
+                <p class="page-hero-subtitle">
+                    Expert advice from Trees2You to help you get the most from your Nordmann Fir tree. 
+                    From setup to care, decorating to safety - we've got you covered.
+                </p>
+                <div class="hero-features">
+                    <div class="hero-feature">
+                        <i data-lucide="book-open"></i>
+                        <span>Expert Guides</span>
+                    </div>
+                    <div class="hero-feature">
+                        <i data-lucide="lightbulb"></i>
+                        <span>Quick Tips</span>
+                    </div>
+                    <div class="hero-feature">
+                        <i data-lucide="tree-pine"></i>
+                        <span>Tree Care</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Post -->
+    <section class="featured-post">
+        <div class="container">
+            <div class="featured-card">
+                <div class="featured-content">
+                    <div class="featured-meta">
+                        <span class="category-badge">Tree Care</span>
+                        <span class="read-time">5 min read</span>
+                    </div>
+                    <h2 class="featured-title">Complete Guide to Caring for Your Nordmann Fir Christmas Tree</h2>
+                    <p class="featured-excerpt">
+                        Everything you need to know to keep your Trees2You Christmas tree fresh, beautiful, and safe throughout the holiday season.
+                    </p>
+                    <a href="christmas-tree-care-guide-nordmann-fir.html" class="btn btn-primary">
+                        <span>Read Full Guide</span>
+                        <i data-lucide="arrow-right"></i>
+                    </a>
+                </div>
+                <!--
+                <div class="featured-visual">
+                    <div class="tree-visual">
+                        <i data-lucide="tree-pine"></i>
+                        <p>Featured: Complete Tree Care Guide</p>
+                    </div>
+                </div>-->
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Tips -->
+    <section class="quick-tips">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Essential Tree Care Tips</h2>
+                <p class="section-subtitle">
+                    Key tips every Trees2You customer should know to keep their Nordmann Fir tree 
+                    looking beautiful and lasting throughout the Christmas season.
+                </p>
+            </div>
+
+            <div class="tips-grid">
+                <div class="tip-card">
+                    <div class="tip-icon">
+                        <i data-lucide="droplets"></i>
+                    </div>
+                    <p class="tip-text">Check water daily - trees can drink up to a gallon per day when fresh</p>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-icon">
+                        <i data-lucide="scissors"></i>
+                    </div>
+                    <p class="tip-text">Fresh cut the trunk before setup for maximum water absorption</p>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-icon">
+                        <i data-lucide="home"></i>
+                    </div>
+                    <p class="tip-text">Keep away from heat sources like radiators and fireplaces</p>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-icon">
+                        <i data-lucide="shield"></i>
+                    </div>
+                    <p class="tip-text">Use LED lights to reduce heat and extend tree freshness</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Posts Grid -->
+    <section class="blog-posts">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Latest Articles & Guides</h2>
+                <p class="section-subtitle">
+                    Discover everything you need to know about Christmas trees, from care and safety 
+                    to decorating and sustainability.
+                </p>
+            </div>
+
+            <div class="posts-grid">
+                <article class="post-card">
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="category-badge">Family Safety</span>
+                            <span class="read-time">3 min read</span>
+                        </div>
+                        <h3 class="post-title">Why Nordmann Fir is Perfect for Families with Young Children</h3>
+                        <p class="post-excerpt">
+                            Discover why soft-needled Nordmann Fir trees are the safest, most family-friendly choice for homes with kids and pets.
+                        </p>
+                        <div class="post-footer">
+                            <span class="post-date">December 15, 2024</span>
+                            <a href="christmas-trees-wexford-nordmann-fir-families.html" class="read-more">
+                                <span>Read More</span>
+                                <i data-lucide="arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="post-card">
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="category-badge">Setup Guide</span>
+                            <span class="read-time">4 min read</span>
+                        </div>
+                        <h3 class="post-title">Setting Up Your Christmas Tree: A Step-by-Step Guide</h3>
+                        <p class="post-excerpt">
+                            From getting it through the door to the perfect placement - our foolproof guide to Christmas tree setup.
+                        </p>
+                        <div class="post-footer">
+                            <span class="post-date">December 12, 2024</span>
+                            <a href="christmas-trees-wexford-setup-guide.html" class="read-more">
+                                <span>Read More</span>
+                                <i data-lucide="arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <!--
+                <article class="post-card">
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="category-badge">Sustainability</span>
+                            <span class="read-time">4 min read</span>
+                        </div>
+                        <h3 class="post-title">Sustainable Christmas: The Environmental Benefits of Real Trees</h3>
+                        <p class="post-excerpt">
+                            Learn how choosing a real Christmas tree from Trees2You supports the environment and local ecosystem.
+                        </p>
+                        <div class="post-footer">
+                            <span class="post-date">December 10, 2024</span>
+                            <a href="#" class="read-more">
+                                <span>Read More</span>
+                                <i data-lucide="arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="post-card">
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="category-badge">Decorating</span>
+                            <span class="read-time">6 min read</span>
+                        </div>
+                        <h3 class="post-title">Decorating Tips for Different Tree Sizes</h3>
+                        <p class="post-excerpt">
+                            Maximize the beauty of your Trees2You tree with our size-specific decorating advice from 5ft to 9ft trees.
+                        </p>
+                        <div class="post-footer">
+                            <span class="post-date">December 8, 2024</span>
+                            <a href="#" class="read-more">
+                                <span>Read More</span>
+                                <i data-lucide="arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="post-card">
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="category-badge">Tradition</span>
+                            <span class="read-time">5 min read</span>
+                        </div>
+                        <h3 class="post-title">The History of Christmas Trees in Ireland</h3>
+                        <p class="post-excerpt">
+                            Explore the wonderful tradition of Christmas trees in Irish families and how Trees2You continues this legacy.
+                        </p>
+                        <div class="post-footer">
+                            <span class="post-date">December 5, 2024</span>
+                            <a href="#" class="read-more">
+                                <span>Read More</span>
+                                <i data-lucide="arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="post-card">
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="category-badge">Safety</span>
+                            <span class="read-time">3 min read</span>
+                        </div>
+                        <h3 class="post-title">Fire Safety Tips for Real Christmas Trees</h3>
+                        <p class="post-excerpt">
+                            Essential safety guidelines to enjoy your real Christmas tree safely throughout the holiday season.
+                        </p>
+                        <div class="post-footer">
+                            <span class="post-date">December 3, 2024</span>
+                            <a href="#" class="read-more">
+                                <span>Read More</span>
+                                <i data-lucide="arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>-->
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2 class="newsletter-title">Get Tree Care Tips Delivered</h2>
+                <p class="newsletter-subtitle">
+                    Join our newsletter for seasonal tips, care guides, and special offers from Trees2You. 
+                    We'll help you make every Christmas magical.
+                </p>
+                
+                <div class="newsletter-form">
+                    <div class="form-group">
+                        <input type="email" placeholder="Enter your email address" class="email-input">
+                        <button class="btn btn-primary">Subscribe Now</button>
+                    </div>
+                    <p class="newsletter-note">
+                        No spam, just helpful Christmas tree tips and seasonal updates.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready for Your Perfect Tree?</h2>
+                <p class="cta-subtitle">
+                    Browse our beautiful selection of Nordmann Fir trees or contact us for personalized advice. 
+                    Trees2You is here to make your Christmas celebration absolutely perfect.
+                </p>
+                <div class="cta-buttons">
+                    <a href="products.html" class="btn btn-primary">
+                        <i data-lucide="tree-pine"></i>
+                        <span>Browse Our Trees</span>
+                    </a>
+                    <a href="contact.html" class="btn btn-secondary">Ask Tree Questions</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Company Info -->
+                <div class="footer-section footer-main">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <i data-lucide="tree-pine"></i>
+                            <div class="logo-dot"></div>
+                        </div>
+                        <div class="logo-text">
+                            <span class="logo-title">Trees2You</span>
+                            <p class="logo-subtitle">Premium Christmas Trees Since 2019</p>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        Family-owned Christmas tree farm in Glynn, Wexford. We specialize in premium 
+                        Nordmann Fir trees with exceptional quality and convenient delivery service.
+                    </p>
+                    
+                    <!-- Contact Info -->
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i data-lucide="map-pin"></i>
+                            <span>Glynn, Wexford, Ireland</span>
+                        </div>
+                        <div class="contact-item">
+                            <i data-lucide="phone"></i>
+                            <span>087 245 5790</span>
+                        </div>
+                        <div class="contact-item">
+                            <i data-lucide="mail"></i>
+                            <span>hello@trees2you.ie</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-section">
+                    <h3 class="footer-title">Navigation</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Our Trees</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="blog.html">Tree Care</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services & Social -->
+                <div class="footer-section">
+                    <h3 class="footer-title">Services</h3>
+                    <ul class="footer-links">
+                        <li>Farm Visits</li>
+                        <li>Local Delivery</li>
+                        <li>Tree Stands</li>
+                        <li>Fresh Cutting</li>
+                    </ul>
+
+                    <h3 class="footer-title">Follow Us</h3>
+                    <div class="social-links">
+                       
+                        <a href="https://www.instagram.com/trees2you.ie/"><i data-lucide="instagram"></i></a>
+                      
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Trees2You. All rights reserved. | Bringing Christmas magic to Irish families since 2019.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

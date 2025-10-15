@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Family Christmas Tree Farm | Trees2You</title>
+    <meta name="description" content="Learn about Trees2You, a family-owned Christmas tree farm in Glynn, Wexford. Five years of growing premium Nordmann Fir trees with sustainable practices.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <a href="index.html" class="logo">
+                    <img src="src/imgs/Trees2you Logo.webp" alt="Trees2You" class="logo-image">
+                </a>
+
+                <!-- Desktop Navigation -->
+                <nav class="nav-desktop">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="products.html" class="nav-link">Our Trees</a>
+                    <a href="about.html" class="nav-link active">About Us</a>
+                    <a href="blog.html" class="nav-link">Tree Care</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </nav>
+
+                <!-- Phone Number -->
+                <div class="phone-number">
+                    <i data-lucide="phone"></i>
+                    <span>087 245 5790</span>
+                </div>
+
+                <!-- Mobile menu button -->
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div class="nav-mobile" id="mobileNav">
+                <a href="index.html" class="nav-link-mobile">Home</a>
+                <a href="products.html" class="nav-link-mobile">Our Trees</a>
+                <a href="about.html" class="nav-link-mobile active">About Us</a>
+                <a href="blog.html" class="nav-link-mobile">Tree Care</a>
+                <a href="contact.html" class="nav-link-mobile">Contact</a>
+                <div class="phone-mobile">
+                    <i data-lucide="phone"></i>
+                    <span>087 245 5790</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="page-hero-content">
+                <h1 class="page-hero-title">Five Years of Excellence</h1>
+                <p class="page-hero-subtitle">
+                    From a simple vision to bring perfect Christmas trees to Wexford families, 
+                    Trees2You has grown into a trusted local tradition.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Story -->
+    <section class="story-section">
+        <div class="container">
+            <div class="story-content">
+                <div class="story-visual">
+                    <div class="tree-visual">
+                        <i data-lucide="tree-pine"></i>
+                        <p class="quote">"Every tree tells a story, and we're honored to be part of your family's Christmas memories."</p>
+                        <p class="quote-author">- The Trees2You Family</p>
+                    </div>
+                </div>
+                <div class="story-text">
+                    <h2 class="section-title">Growing Dreams Since 2019</h2>
+                    <p class="story-paragraph">
+                        Trees2You began as a passion project born from our love of Christmas and the beautiful 
+                        Wexford countryside. What started as a small family farm has evolved into something special - 
+                        a place where families come to find not just a tree, but the beginning of their Christmas magic.
+                    </p>
+                    <p class="story-paragraph">
+                        We chose Nordmann Fir trees because we believe every family deserves a beautiful, 
+                        safe Christmas tree that brings joy without the worry of sharp needles or constant cleanup. 
+                        As parents ourselves, we understand what matters most.
+                    </p>
+                    <p class="story-paragraph">
+                        Over five years, we've had the privilege of serving over 1,000 families across 
+                        Wexford, creating lasting memories and friendships along the way.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Values -->
+    <section class="values-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Core Values</h2>
+                <p class="section-subtitle">
+                    These principles guide everything we do, from how we grow our trees to how we serve our customers. 
+                    They make Trees2You more than just a business - we're part of your Christmas tradition.
+                </p>
+            </div>
+
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i data-lucide="heart"></i>
+                    </div>
+                    <h3 class="value-title">Family Focused</h3>
+                    <p class="value-description">
+                        We're a family business that understands the importance of Christmas traditions and creating lasting memories.
+                    </p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i data-lucide="leaf"></i>
+                    </div>
+                    <h3 class="value-title">Sustainable Practices</h3>
+                    <p class="value-description">
+                        Environmental responsibility guides our farming practices, protecting the beautiful Wexford countryside.
+                    </p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i data-lucide="star"></i>
+                    </div>
+                    <h3 class="value-title">Premium Quality</h3>
+                    <p class="value-description">
+                        We never compromise on quality. Every tree is hand-selected, fresh-cut, and guaranteed for excellence.
+                    </p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i data-lucide="users"></i>
+                    </div>
+                    <h3 class="value-title">Community Commitment</h3>
+                    <p class="value-description">
+                        Supporting local families and businesses is central to our mission as part of the Wexford community.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Mission -->
+    <section class="mission-section">
+        <div class="container">
+            <div class="mission-content">
+                <h2 class="section-title">Our Mission</h2>
+                <p class="mission-text">
+                    To bring families together around beautiful, sustainable Christmas trees while 
+                    supporting our local community and protecting the environment we all cherish.
+                </p>
+                <div class="mission-quote">
+                    <p class="quote-text">
+                        "At Trees2You, we believe every family deserves a perfect Christmas tree experience - 
+                        from busy parents who need convenient delivery to grandparents who love the tradition 
+                        of choosing their tree on the farm. We're here to serve everyone with the same care 
+                        and attention we'd want for our own family."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visit Our Farm -->
+    <section class="farm-section">
+        <div class="container">
+            <div class="farm-content">
+                <div class="farm-info">
+                    <h2 class="section-title">Visit Our Farm in Glynn</h2>
+                    <p class="farm-description">
+                        Experience the magic of choosing your Christmas tree in person. Walk among our 
+                        rows of beautiful Nordmann Firs, breathe in the fresh country air, and create memories 
+                        that will last a lifetime.
+                    </p>
+                    
+                    <ul class="farm-features">
+                        <li><i data-lucide="check-circle"></i> 5 acres of premium Nordmann Fir cultivation</li>
+                        <li><i data-lucide="check-circle"></i> Scenic countryside location in Glynn</li>
+                        <li><i data-lucide="check-circle"></i> Family-friendly walking paths between tree rows</li>
+                        <li><i data-lucide="check-circle"></i> Professional growing and maintenance standards</li>
+                        <li><i data-lucide="check-circle"></i> Fresh cutting station for optimal tree health</li>
+                        <li><i data-lucide="check-circle"></i> Convenient parking and tree loading facilities</li>
+                    </ul>
+
+                    <div class="farm-info-box">
+                        <h3>Farm Visit Information</h3>
+                        <div class="info-items">
+                            <div class="info-item">
+                                <i data-lucide="map-pin"></i>
+                                <span>Glynn, Wexford (Exact address provided with booking)</span>
+                            </div>
+                            <div class="info-item">
+                                <i data-lucide="clock"></i>
+                                <span>Weekends & Evenings by Appointment</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="farm-visual">
+                    <div class="tree-visual">
+                        <i data-lucide="tree-pine"></i>
+                        <p>Experience the joy of choosing your perfect tree surrounded by the beauty of rural Wexford</p>
+                        <div class="farm-features-list">
+                            <span>• Free Parking</span>
+                            <span>• Fresh Cutting</span>
+                            <span>• Family Friendly</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-choose">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Why Families Choose Trees2You</h2>
+                <p class="section-subtitle">
+                    Five years of experience has taught us exactly what families need for the perfect Christmas tree experience.
+                </p>
+            </div>
+
+            <div class="why-grid">
+                <div class="why-item">
+                    <i data-lucide="award"></i>
+                    <h3>Proven Quality</h3>
+                    <p>5 years of consistently delivering beautiful, fresh trees</p>
+                </div>
+                <div class="why-item">
+                    <i data-lucide="users"></i>
+                    <h3>1000+ Happy Families</h3>
+                    <p>Local reputation built on satisfied customers and referrals</p>
+                </div>
+                <div class="why-item">
+                    <i data-lucide="heart"></i>
+                    <h3>Personal Service</h3>
+                    <p>Family business that treats every customer like family</p>
+                </div>
+                <div class="why-item">
+                    <i data-lucide="leaf"></i>
+                    <h3>Sustainable Practices</h3>
+                    <p>Environmentally responsible growing for a better future</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to Visit Our Farm?</h2>
+                <p class="cta-subtitle">
+                    Come see why families have been choosing Trees2You for their Christmas magic. 
+                    Experience the beauty of our farm and find your perfect tree in person.
+                </p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary">Plan Your Farm Visit</a>
+                    <a href="products.html" class="btn btn-secondary">Browse Our Trees</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Company Info -->
+                <div class="footer-section footer-main">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <i data-lucide="tree-pine"></i>
+                            <div class="logo-dot"></div>
+                        </div>
+                        <div class="logo-text">
+                            <span class="logo-title">Trees2You</span>
+                            <p class="logo-subtitle">Premium Christmas Trees Since 2019</p>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        Family-owned Christmas tree farm in Glynn, Wexford. We specialize in premium 
+                        Nordmann Fir trees with exceptional quality and convenient delivery service.
+                    </p>
+                    
+                    <!-- Contact Info -->
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i data-lucide="map-pin"></i>
+                            <span>Glynn, Wexford, Ireland</span>
+                        </div>
+                        <div class="contact-item">
+                            <i data-lucide="phone"></i>
+                            <span>087 245 5790</span>
+                        </div>
+                        <div class="contact-item">
+                            <i data-lucide="mail"></i>
+                            <span>hello@trees2you.ie</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-section">
+                    <h3 class="footer-title">Navigation</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Our Trees</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="blog.html">Tree Care</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services & Social -->
+                <div class="footer-section">
+                    <h3 class="footer-title">Services</h3>
+                    <ul class="footer-links">
+                        <li>Farm Visits</li>
+                        <li>Local Delivery</li>
+                        <li>Tree Stands</li>
+                        <li>Fresh Cutting</li>
+                    </ul>
+
+                    <h3 class="footer-title">Follow Us</h3>
+                    <div class="social-links">
+                        
+                        <a href="https://www.instagram.com/trees2you.ie/"><i data-lucide="instagram"></i></a>
+                       
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Trees2You. All rights reserved. | Bringing Christmas magic to Irish families since 2019.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

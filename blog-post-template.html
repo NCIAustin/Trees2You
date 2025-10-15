@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[BLOG POST TITLE] | Trees2You Blog</title>
+    <meta name="description" content="[BLOG POST DESCRIPTION - 150-160 characters]">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <a href="index.html" class="logo">
+                    <img src="src/imgs/Trees2you Logo.webp" alt="Trees2You" class="logo-image">
+                </a>
+
+                <!-- Desktop Navigation -->
+                <nav class="nav-desktop">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="products.html" class="nav-link">Our Trees</a>
+                    <a href="about.html" class="nav-link">About Us</a>
+                    <a href="blog.html" class="nav-link active">Tree Care</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </nav>
+
+                <!-- Phone Number -->
+                <div class="phone-number">
+                    <i data-lucide="phone"></i>
+                    <span>087 245 5790</span>
+                </div>
+
+                <!-- Mobile menu button -->
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div class="nav-mobile" id="mobileNav">
+                <a href="index.html" class="nav-link-mobile">Home</a>
+                <a href="products.html" class="nav-link-mobile">Our Trees</a>
+                <a href="about.html" class="nav-link-mobile">About Us</a>
+                <a href="blog.html" class="nav-link-mobile active">Tree Care</a>
+                <a href="contact.html" class="nav-link-mobile">Contact</a>
+                <div class="phone-mobile">
+                    <i data-lucide="phone"></i>
+                    <span>087 245 5790</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Blog Post Header -->
+    <section class="blog-post-header">
+        <div class="container">
+            <div class="blog-breadcrumb">
+                <a href="index.html">Home</a>
+                <i data-lucide="chevron-right"></i>
+                <a href="blog.html">Tree Care</a>
+                <i data-lucide="chevron-right"></i>
+                <span>[BLOG POST TITLE]</span>
+            </div>
+            
+            <div class="blog-post-meta">
+                <span class="category-badge">[CATEGORY]</span>
+                <span class="post-date">[DATE]</span>
+                <span class="read-time">[X] min read</span>
+            </div>
+            
+            <h1 class="blog-post-title">[BLOG POST TITLE]</h1>
+            <p class="blog-post-excerpt">[BLOG POST EXCERPT/SUBTITLE]</p>
+        </div>
+    </section>
+
+    <!-- Blog Post Content -->
+    <article class="blog-post-content">
+        <div class="container">
+            <div class="blog-content-wrapper">
+                <!-- Main Content -->
+                <div class="blog-main-content">
+                    <!-- Introduction -->
+                    <div class="blog-section">
+                        <p class="blog-intro">
+                            [INTRODUCTION PARAGRAPH - Hook the reader and introduce the topic]
+                        </p>
+                    </div>
+
+                    <!-- Content Sections -->
+                    <div class="blog-section">
+                        <h2>[SECTION HEADING 1]</h2>
+                        <p>
+                            [PARAGRAPH CONTENT - Main body text with helpful information]
+                        </p>
+                        <p>
+                            [ADDITIONAL PARAGRAPH if needed]
+                        </p>
+                    </div>
+
+                    <div class="blog-section">
+                        <h2>[SECTION HEADING 2]</h2>
+                        <p>
+                            [PARAGRAPH CONTENT]
+                        </p>
+                        
+                        <!-- Optional: List format -->
+                        <ul class="blog-list">
+                            <li><i data-lucide="check-circle"></i> [LIST ITEM 1]</li>
+                            <li><i data-lucide="check-circle"></i> [LIST ITEM 2]</li>
+                            <li><i data-lucide="check-circle"></i> [LIST ITEM 3]</li>
+                        </ul>
+                    </div>
+
+                    <!-- Optional: Tip Box -->
+                    <div class="blog-tip-box">
+                        <div class="tip-icon">
+                            <i data-lucide="lightbulb"></i>
+                        </div>
+                        <div class="tip-content">
+                            <h3>Pro Tip</h3>
+                            <p>[HELPFUL TIP OR IMPORTANT INFORMATION]</p>
+                        </div>
+                    </div>
+
+                    <div class="blog-section">
+                        <h2>[SECTION HEADING 3]</h2>
+                        <p>
+                            [PARAGRAPH CONTENT]
+                        </p>
+                    </div>
+
+                    <!-- Conclusion -->
+                    <div class="blog-section">
+                        <h2>Conclusion</h2>
+                        <p>
+                            [CONCLUSION PARAGRAPH - Summarize key points and call to action]
+                        </p>
+                    </div>
+
+                    <!-- Call to Action -->
+                    <div class="blog-cta">
+                        <h3>Ready for Your Perfect Tree?</h3>
+                        <p>Contact Trees2You today to order your premium Nordmann Fir Christmas tree.</p>
+                        <div class="blog-cta-buttons">
+                            <a href="products.html" class="btn btn-primary">
+                                <i data-lucide="tree-pine"></i>
+                                <span>Browse Our Trees</span>
+                            </a>
+                            <a href="contact.html" class="btn btn-secondary">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <aside class="blog-sidebar">
+                    <!-- About Trees2You -->
+                    <div class="sidebar-widget">
+                        <h3>About Trees2You</h3>
+                        <p>Family-owned Christmas tree farm in Glynn, Wexford, specializing in premium Nordmann Fir trees since 2019.</p>
+                        <a href="about.html" class="btn btn-outline">Learn More</a>
+                    </div>
+
+                    <!-- Quick Tips -->
+                    <div class="sidebar-widget">
+                        <h3>Quick Tree Care Tips</h3>
+                        <ul class="sidebar-tips">
+                            <li><i data-lucide="droplets"></i> Check water daily</li>
+                            <li><i data-lucide="scissors"></i> Fresh cut the trunk</li>
+                            <li><i data-lucide="home"></i> Keep away from heat</li>
+                            <li><i data-lucide="shield"></i> Use LED lights</li>
+                        </ul>
+                    </div>
+
+                    <!-- Contact Widget -->
+                    <div class="sidebar-widget sidebar-contact">
+                        <h3>Need Help?</h3>
+                        <p>Have questions about your Christmas tree? We're here to help!</p>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <i data-lucide="phone"></i>
+                                <span>087 245 5790</span>
+                            </div>
+                            <div class="contact-item">
+                                <i data-lucide="mail"></i>
+                                <span>hello@trees2you.ie</span>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </article>
+
+    <!-- Related Posts -->
+    <section class="related-posts">
+        <div class="container">
+            <h2 class="section-title">Related Articles</h2>
+            <div class="related-posts-grid">
+                <article class="post-card">
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="category-badge">[CATEGORY]</span>
+                            <span class="read-time">[X] min read</span>
+                        </div>
+                        <h3 class="post-title">[RELATED POST TITLE 1]</h3>
+                        <p class="post-excerpt">[RELATED POST EXCERPT 1]</p>
+                        <div class="post-footer">
+                            <span class="post-date">[DATE]</span>
+                            <a href="#" class="read-more">
+                                <span>Read More</span>
+                                <i data-lucide="arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="post-card">
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="category-badge">[CATEGORY]</span>
+                            <span class="read-time">[X] min read</span>
+                        </div>
+                        <h3 class="post-title">[RELATED POST TITLE 2]</h3>
+                        <p class="post-excerpt">[RELATED POST EXCERPT 2]</p>
+                        <div class="post-footer">
+                            <span class="post-date">[DATE]</span>
+                            <a href="#" class="read-more">
+                                <span>Read More</span>
+                                <i data-lucide="arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="post-card">
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="category-badge">[CATEGORY]</span>
+                            <span class="read-time">[X] min read</span>
+                        </div>
+                        <h3 class="post-title">[RELATED POST TITLE 3]</h3>
+                        <p class="post-excerpt">[RELATED POST EXCERPT 3]</p>
+                        <div class="post-footer">
+                            <span class="post-date">[DATE]</span>
+                            <a href="#" class="read-more">
+                                <span>Read More</span>
+                                <i data-lucide="arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2 class="newsletter-title">Get More Tree Care Tips</h2>
+                <p class="newsletter-subtitle">
+                    Subscribe to our newsletter for seasonal tips, care guides, and special offers from Trees2You.
+                </p>
+                
+                <div class="newsletter-form">
+                    <div class="form-group">
+                        <input type="email" placeholder="Enter your email address" class="email-input">
+                        <button class="btn btn-primary">Subscribe Now</button>
+                    </div>
+                    <p class="newsletter-note">
+                        No spam, just helpful Christmas tree tips and seasonal updates.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Company Info -->
+                <div class="footer-section footer-main">
+                    <div class="footer-logo">
+                        <img src="src/imgs/Trees2you Logo.webp" alt="Trees2You" class="footer-logo-image">
+                    </div>
+                    <p class="footer-description">
+                        Family-owned Christmas tree farm in Glynn, Wexford. We specialize in premium 
+                        Nordmann Fir trees with exceptional quality and convenient delivery service.
+                    </p>
+                    
+                    <!-- Contact Info -->
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i data-lucide="map-pin"></i>
+                            <span>Glynn, Wexford, Ireland</span>
+                        </div>
+                        <div class="contact-item">
+                            <i data-lucide="phone"></i>
+                            <span>087 245 5790</span>
+                        </div>
+                        <div class="contact-item">
+                            <i data-lucide="mail"></i>
+                            <span>hello@trees2you.ie</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-section">
+                    <h3 class="footer-title">Navigation</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Our Trees</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="blog.html">Tree Care</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services & Social -->
+                <div class="footer-section">
+                    <h3 class="footer-title">Services</h3>
+                    <ul class="footer-links">
+                        <li>Farm Visits</li>
+                        <li>Local Delivery</li>
+                        <li>Tree Stands</li>
+                        <li>Fresh Cutting</li>
+                    </ul>
+
+                    <h3 class="footer-title">Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i data-lucide="facebook"></i></a>
+                        <a href="#"><i data-lucide="instagram"></i></a>
+                        <a href="#"><i data-lucide="twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Trees2You. All rights reserved. | Bringing Christmas magic to Irish families since 2019.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

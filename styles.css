@@ -290,10 +290,8 @@ p {
 
 .hero-graph-image {
     width: 100%;
-    max-width: 500px;
+    max-width: 400px;
     height: auto;
-    border-radius: 1rem;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
 }
 
 /* Sections */

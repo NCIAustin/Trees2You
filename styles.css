@@ -224,6 +224,14 @@ p {
     background-color: rgba(0, 0, 0, 0.1);
 }
 
+.hero-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+    position: relative;
+}
+
 .hero-content,
 .page-hero-content {
     position: relative;
@@ -271,6 +279,21 @@ p {
     gap: 0.75rem;
     color: #a7f3d0;
     font-weight: 500;
+}
+
+.hero-graphic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.hero-graph-image {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 1rem;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
 }
 
 /* Sections */
@@ -1942,9 +1965,22 @@ p {
         padding: 4rem 0;
     }
 
+    .hero-wrapper {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
     .hero-content,
     .page-hero-content {
         text-align: center;
+    }
+
+    .hero-graphic {
+        order: -1;
+    }
+
+    .hero-graph-image {
+        max-width: 100%;
     }
 
     .hero-subtitle,

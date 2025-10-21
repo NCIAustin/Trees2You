@@ -212,7 +212,7 @@ p {
 .page-hero {
     background: linear-gradient(135deg, #064e3b 0%, #065f46 50%, #059669 100%);
     color: white;
-    padding: 5rem 0;
+   
     position: relative;
     overflow: hidden;
 }

@@ -290,7 +290,7 @@ p {
 .hero-graph-image {
    
     max-width: 400px;
-    height: 250px;
+    max-height: 250px;
 }
 
 /* Sections */
